@@ -1,0 +1,8 @@
+name: 'sdc_distribute'
+version: '0.0.1'
+
+config-version: 2
+
+require-dbt-version: ">=1.0.0"
+
+on-run-end: "{{ sdc_distribute.on_run_end_operations() }}"
